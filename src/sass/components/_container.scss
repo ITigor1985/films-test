@@ -1,23 +1,11 @@
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 375px) {
-  .container {
-    max-width: 425px;
+  padding: 0 10px;
+  width: 300px;
+  @include min-width('medium') {
+    width: 638px;
   }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1439px;
-    padding-left: 100px;
-    padding-right: 100px;
+  @include min-width('large') {
+    width: 902px;
   }
 }
